@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Healthcare Assistant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: #2ecc71;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏥 AI Healthcare Assistant</h1>
+        <p><span class="status-dot"></span>System Online & Ready</p>
+        <p>
+            Welcome to the automated patient support portal. 
+            Click the <strong>chat bubble</strong> in the bottom right corner to:
+        </p>
+        <ul style="text-align: left; color: #34495e; margin-top: 20px;">
+            <li>📅 Book appointments with specialists</li>
+            <li>🧠 Ask questions about mental health</li>
+            <li>💊 Check symptoms instantly</li>
+        </ul>
+        <div class="footer">
+            Powered by AWS Lambda, Lex & DynamoDB
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // ---------------------------------------------------------
+        // PASTE YOUR KOMMUNICATE SCRIPT BELOW THIS LINE
+        // ---------------------------------------------------------
+        
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"148e2c037c64acfb03cc9438187169dc1","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = d.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = d.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+
+        // ---------------------------------------------------------
+        // END OF KOMMUNICATE SCRIPT
+        // ---------------------------------------------------------
+    </script>
+
+</body>
+</html>
